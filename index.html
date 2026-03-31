@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Régis Barrattier — Portfolio BTS SIO SLAM</title>
+    <meta name="description" content="Portfolio BTS SIO option SLAM — projets, veille technologique, compétences et parcours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,12 +18,14 @@
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#competences">Compétences</a></li>
+                <li><a href="#synthese-competences">Synthèse E4</a></li>
                 <li><a href="#formation">Formation</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#bts-projects">Projets BTS</a></li>
                 <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#veille">Veille</a></li>
                 <li><a href="#stage">Stage</a></li>
+                <li><a href="#gpi">Patrimoine</a></li>
+                <li><a href="#veille">Veille</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -33,15 +36,30 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <h1>BARRATTIER Régis</h1>
-                    <p>Étudiant en deuxième année de BTS SIO (Services Informatiques aux Organisations) spécialisé en SLAM (Solutions Logicielles et Application Métier) à l'EPSI de Montpellier</p>
+                    <p class="home-lead">Étudiant en deuxième année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métier) à l’EPSI de Montpellier. Objectif : devenir développeur d’applications en progressant sur la conception, la qualité du code et la mise en production responsable.</p>
+                    <ul class="home-meta">
+                        <li><span class="home-meta-label">Formation</span> BTS SIO 2<sup>e</sup> année · EPSI Montpellier</li>
+                        <li><span class="home-meta-label">Option</span> SLAM</li>
+                    </ul>
+                    <p class="home-documents-intro">Documents et profils pour le jury / les recruteurs :</p>
+                    <ul class="home-links">
+                        <li><a href="images/Modern%20Professional%20CV%20Resume%20(1).pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+                        <li><a href="https://www.linkedin.com/in/r%C3%A9gis-barrattier-902810327/" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a></li>
+                        <li><a href="https://github.com/finsamer" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
                 </div>
 
             <!-- Section À propos -->
             <div class="tab-pane" id="about">
                 <h2>À propos</h2>
                 <p>Je suis un étudiant passionné par le développement logiciel et les nouvelles technologies. Mon objectif est de devenir un développeur compétent et polyvalent.</p>
+                <div class="bts-objectifs">
+                    <h3>Objectifs du BTS SIO et mon option</h3>
+                    <p>Le <strong>BTS SIO</strong> prépare en deux ans à rejoindre une équipe informatique : comprendre les besoins d’une organisation, contribuer à la gestion du système d’information, assurer le support et — selon l’option — <strong>développer des solutions applicatives</strong> ou <strong>administrer une infrastructure</strong>. La formation alterne cours, mises en situation professionnelles (PPE, ateliers) et stages.</p>
+                    <p><strong>Mon parcours : option SLAM.</strong> J’ai choisi cette spécialisation pour me former à la conception et au développement d’applications (web ou client lourd), à l’utilisation de bases de données et à la méthodologie de projet ; elle correspond à mon projet professionnel côté développement logiciel.</p>
+                </div>
                 <div class="bts-presentation">
-                    <h3>Le BTS SIO propose deux spécialités :</h3>
+                    <h3>Les deux spécialités du BTS SIO :</h3>
                     <div class="specialites">
                         <!-- Option SISR -->
                         <div class="specialite">
@@ -131,6 +149,19 @@
                         <h3>SQL Server</h3>
                         <p>Système de gestion de base de données relationnelle de Microsoft.</p>
                     </div>
+                    <div class="competence-item">
+                        <div class="competence-icon">🐳</div>
+                        <h3>Docker</h3>
+                        <p>Conteneurisation et exécution d’applications en environnement isolé (stage 2<sup>e</sup> année : stack FastAPI, MongoDB, services du projet).</p>
+                    </div>
+                </div>
+                <div class="synthese-bloc" id="synthese-competences">
+                    <h3>Tableau de synthèse des compétences professionnelles</h3>
+                    <p class="synthese-intro">Le tableau officiel (compétences du référentiel BTS SIO, preuves, niveaux) est disponible au format Excel. Seules les compétences effectivement maîtrisées et illustrables à l’oral y figurent, conformément aux consignes du jury.</p>
+                    <p class="synthese-file-note"><strong>Fichier :</strong> <code>documents/epreuvetableauregis.xlsx</code> — une version mise à jour pourra remplacer ce classeur en conservant le nom ou en ajustant le lien ci-dessous.</p>
+                    <p>
+                        <a href="documents/epreuvetableauregis.xlsx" class="veille-link" download="epreuvetableauregis.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Télécharger le tableau de synthèse (.xlsx)</a>
+                    </p>
                 </div>
             </div>
 
@@ -155,45 +186,57 @@
 
             <!-- Section Projets -->
             <div class="tab-pane" id="projects">
-                <h2>Projets</h2>
-                <p>Voici quelques projets que j'ai réalisés :</p>
+                <h2>Projets (PPE et réalisations)</h2>
+                <p>Les <strong>projets personnalisés encadrés (PPE)</strong> et travaux d’équipe permettent de mobiliser des technologies concrètes. Ci-dessous : technologies utilisées, courte description et lien vers le code lorsque le dépôt est public.</p>
                 <div class="projects">
                     <div class="project">
-                        <img src="images/workshop.jpg" alt="Workshop" class="project-image">
+                        <div class="project-thumb" role="img" aria-label="Aperçu projet Workshop">Workshop</div>
                         <h3>Workshop</h3>
-                        <p>Un projet collaboratif pour apprendre à travailler en équipe sur des problématiques réelles.</p>
+                        <p class="project-tech"><span class="tech-tag">Travail d’équipe</span><span class="tech-tag">Méthodologie</span></p>
+                        <p>Projet collaboratif sur des problématiques réelles ; apprentissage de la coordination et de la livraison en groupe.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                     <div class="project">
-                        <img src="images/bataille-navale.jpg" alt="Bataille Navale" class="project-image">
-                        <h3>Bataille Navale</h3>
-                        <p>Un jeu développé en Python pour simuler une bataille navale avec une interface utilisateur simple.</p>
+                        <div class="project-thumb" role="img" aria-label="Aperçu Bataille navale">Bataille navale</div>
+                        <h3>Bataille navale</h3>
+                        <p class="project-tech"><span class="tech-tag">Python</span></p>
+                        <p>Jeu de bataille navale avec interface utilisateur simple ; logique de jeu et gestion des grilles.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                     <div class="project">
-                        <img src="images/stylomagik.jpg" alt="StyloMagik" class="project-image">
+                        <div class="project-thumb" role="img" aria-label="Aperçu StyloMagik">StyloMagik</div>
                         <h3>StyloMagik</h3>
-                        <p>Un projet innovant pour créer une application de gestion de stylos connectés.</p>
+                        <p class="project-tech"><span class="tech-tag">Conception</span><span class="tech-tag">Application</span></p>
+                        <p>Projet de conception autour d’une application de gestion de stylos connectés.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                     <div class="project">
-                        <img src="images/seo.jpg" alt="Projet SEO" class="project-image">
-                        <h3>Projet Transversal SEO</h3>
-                        <p>Un projet visant à optimiser le référencement naturel d'un site web en utilisant les meilleures pratiques SEO.</p>
+                        <div class="project-thumb" role="img" aria-label="Aperçu SEO">SEO</div>
+                        <h3>Projet transversal SEO</h3>
+                        <p class="project-tech"><span class="tech-tag">Web</span><span class="tech-tag">SEO</span></p>
+                        <p>Optimisation du référencement naturel d’un site web selon les bonnes pratiques.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                     <div class="project">
-                        <img src="images/fastflash.jpg" alt="FastFlash" class="project-image">
+                        <div class="project-thumb" role="img" aria-label="Aperçu FastFlash">FastFlash</div>
                         <h3>FastFlash</h3>
-                        <p>Un projet de développement d'une application mobile pour capturer et partager des moments instantanément.</p>
+                        <p class="project-tech"><span class="tech-tag">Mobile</span></p>
+                        <p>Étude et réalisation autour d’une application mobile de partage de contenus instantanés.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                     <div class="project">
-                        <img src="images/nectar-shield.jpg" alt="Nectar Shield" class="project-image">
+                        <div class="project-thumb" role="img" aria-label="Aperçu Nectar Shield">Nectar Shield</div>
                         <h3>Nectar Shield</h3>
-                        <p>Un projet de cybersécurité visant à protéger les données sensibles des entreprises grâce à des solutions innovantes.</p>
+                        <p class="project-tech"><span class="tech-tag">Cybersécurité</span></p>
+                        <p>Projet orienté protection des données et sensibilisation aux enjeux de sécurité.</p>
+                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
                     </div>
                 </div>
             </div>
 
             <!-- Section Projets BTS -->
             <div class="tab-pane" id="bts-projects">
-                <h2>Projets BTS (Epreuves)</h2>
+                <h2>Projets BTS (épreuves)</h2>
                 <p>Deux projets que je réaliserai cette année pour le BTS. Les emplacements ci-dessous seront remplis dès que les projets seront lancés.</p>
                 <div class="bts-projects-grid">
                     <div class="bts-project">
@@ -214,10 +257,31 @@
                 <h2>Parcours</h2>
                 <div class="formation-blocks">
                     <div class="formation-block">
-                        <h3>2025</h3>
-                        <p>Stage de première année – Réalisation d'un site de vente d'œuvres d’arts africaines avec Elementor.</p>
+                        <h3>2025/2026 — Stage de deuxième année</h3>
+                        <p>Développement d’une application web : back-end avec <strong>FastAPI</strong>, données avec <strong>MongoDB</strong> (API, manipulation dynamique des données). <strong>Docker</strong> pour la conteneurisation et des environnements reproductibles. Mise en place d’un <strong>chatbot</strong> s’appuyant sur des modèles d’IA (<strong>Mistral</strong>, <strong>ChatGPT</strong>).</p>
+                    </div>
+                    <div class="formation-block">
+                        <h3>2024/2025 — Stage de première année</h3>
+                        <p>Réalisation d’un site de vente d’œuvres d’art africaines avec <strong>WordPress</strong> et <strong>Elementor</strong> (mise en page, contenus, mise en ligne).</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Section Gestion du patrimoine informatique -->
+            <div class="tab-pane" id="gpi">
+                <h2>Gestion du patrimoine informatique</h2>
+                <p>La <strong>gestion du patrimoine informatique (GPI)</strong> recouvre l’ensemble des actifs numériques d’une organisation : matériels, logiciels, réseau, données, comptes et contrats. L’objectif est de les identifier, les documenter, assurer leur disponibilité et réduire les risques (sécurité, obsolescence, non-conformité).</p>
+                <h3>Notions travaillées en formation</h3>
+                <ul class="gpi-list">
+                    <li><strong>Inventaire et cartographie</strong> : savoir ce qui existe, où c’est hébergé, qui en est responsable.</li>
+                    <li><strong>Maintenance et évolution</strong> : mises à jour, cycle de vie des équipements et des logiciels.</li>
+                    <li><strong>Sauvegarde et reprise</strong> : protection des données et conscience des enjeux de restauration.</li>
+                    <li><strong>Sécurité et accès</strong> : authentification, droits, bonnes pratiques pour limiter les incidents.</li>
+                    <li><strong>Documentation et support</strong> : procédures, transfert d’information aux utilisateurs.</li>
+                </ul>
+                <h3>Mise en situation</h3>
+                <p>En <strong>première année</strong>, mon <a href="#parcours">stage</a> sur un site vitrine (WordPress / Elementor) m’a fait travailler organisation du contenu, choix d’extensions et hébergement — autant d’éléments qui relèvent du patrimoine applicatif « visible » côté métier.</p>
+                <p>En <strong>deuxième année</strong>, le projet FastAPI / MongoDB, la <strong>conteneurisation (Docker)</strong> et le chatbot ont mis l’accent sur les <strong>API</strong>, la persistance des données et l’intégration de services d’IA : autant de briques à documenter, sécuriser et maintenir dans un SI réel.</p>
             </div>
 
             <!-- Section Veille -->
@@ -229,7 +293,9 @@
                     <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d'activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d'information permettant d'anticiper ou de s'informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. Cela a pour but d'évaluer l'impact sur l'environnement et l'organisation.</p>
                     
                     <h3>Les principaux outils de ma veille</h3>
-                    <p>J'ai effectué ma veille technologique grâce aux newsletters tel que Feedly un agrégateur de flux RSS et Openai.com le newsletter des professionnels en Data Science. En plus des informations fournis chaque semaine/mois, j'ai quelque sites en favoris permettant de me tenir au courant des dernières actualités tel que Hitek.fr qui est un site internet regroupant l'actualité High Tech et Geek, ou encore Hardware.fr un site regroupant l'actualité sur les processeurs, les cartes graphiques, les cartes mères, etc...</p>
+                    <p>J’effectue ma veille avec <strong>Feedly</strong> (agrégation de flux RSS), des newsletters spécialisées (par exemple autour de l’IA et de la data), et parfois des alertes du type <strong>Google Alerts</strong> sur des mots-clés ciblés. En complément, je consulte des sites d’actualité tech (<abbr title="High Tech">HT</abbr> / matériel) pour suivre l’évolution des produits et des menaces. Les informations sont synthétisées dans mon <a href="images/2024-25_SN1-BARRATTIER-Regis_DocumentVeilleTechno.pdf" target="_blank" rel="noopener">rapport de veille (PDF)</a>.</p>
+                    <h3>Impact sur mon métier visé (développement / SI)</h3>
+                    <p>Les évolutions liées à l’<strong>IA dans la cybersécurité</strong> changent la donne pour les développeurs : automatisation de la détection, nouveaux outils, mais aussi risques (faux positifs, dépendance aux fournisseurs, fuites de données d’entraînement). Suivre ces sujets me permet d’anticiper les exigences de sécurité dans les projets applicatifs et d’échanger de façon informée avec les équipes infrastructure lors de l’E4.</p>
                 </div>
 
                 <div class="veilles-list">
@@ -244,17 +310,26 @@
 
             <!-- Section Stage -->
             <div class="tab-pane" id="stage">
-                <h2>Stage</h2>
-                <p>Durant mon stage, j'ai eu l'opportunité de travailler sur des projets concrets, ce qui m'a permis de mettre en pratique mes compétences et d'acquérir de l'expérience professionnelle.</p>
-                <a href="#" class="stage-link" data-stage="rapport-stage-2025">📄 Consulter le rapport de stage</a>
+                <h2>Stages en entreprise</h2>
+                <p>Le détail chronologique est dans la section <a href="#parcours">Parcours</a>. Synthèse des deux expériences :</p>
+                <h3>Deuxième année (2025/2026)</h3>
+                <p>Lors de mon stage de deuxième année, j’ai participé au développement d’une <strong>application web</strong> : <strong>FastAPI</strong> pour le back-end et <strong>MongoDB</strong> pour la base de données. L’objectif était de concevoir une <strong>API</strong> claire et efficace, et de manipuler les données de façon dynamique côté application. <strong>Docker</strong> a servi à conteneuriser l’application (et les services associés), ce qui rend les environnements plus reproductibles et simplifie le déploiement.</p>
+                <p>J’ai aussi contribué à la mise en place d’un <strong>chatbot</strong> en intégrant des modèles d’<strong>intelligence artificielle</strong> (<strong>Mistral</strong> et <strong>ChatGPT</strong>), ce qui m’a fait travailler la chaîne depuis l’API jusqu’aux réponses générées.</p>
+                <p><strong>Document lié :</strong> <a href="images/2025-26_Evaluation-Stage-SN2-Regis.pdf" class="veille-link" target="_blank" rel="noopener">Évaluation de stage (PDF)</a></p>
+                <h3>Première année (2024/2025)</h3>
+                <p>Stage centré sur un site de vente d’œuvres d’art africaines avec <strong>Elementor</strong> : besoins du porteur de projet, structure des pages, contenus et mise en ligne — lien fort avec le métier et les outils no-code / low-code.</p>
             </div>
 
             <!-- Section Contact -->
             <div class="tab-pane" id="contact">
                 <h2>Contact</h2>
+                <p class="contact-lead">Pour les recruteurs ou le jury : coordonnées directes et liens utiles.</p>
                 <div class="contact-info">
                     <p><strong>Email :</strong> <a href="mailto:regis.barrattier@ecoles-epsi.net">regis.barrattier@ecoles-epsi.net</a></p>
                     <p><strong>Téléphone :</strong> <a href="tel:+33641313372">06 41 31 33 72</a></p>
+                    <p><strong>CV :</strong> <a href="images/Modern%20Professional%20CV%20Resume%20(1).pdf" target="_blank" rel="noopener">Télécharger le CV (PDF)</a></p>
+                    <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/r%C3%A9gis-barrattier-902810327/" target="_blank" rel="noopener noreferrer">linkedin.com/in/régis-barrattier-902810327</a></p>
+                    <p><strong>GitHub :</strong> <a href="https://github.com/finsamer" target="_blank" rel="noopener noreferrer">github.com/finsamer</a></p>
                 </div>
             </div>
         </div>
