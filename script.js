@@ -1,16 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab-btn');
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    if (!revealElements.length) return;
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Retirer la classe active des autres onglets
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+        revealElements.forEach((el) => el.classList.add('is-visible'));
+        return;
+    }
 
-            // Faire défiler jusqu'à la section correspondante
-            const targetId = tab.getAttribute('data-tab');
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-}); 
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+            });
+        },
+        {
+            root: null,
+            rootMargin: '0px 0px -6% 0px',
+            threshold: 0.12,
+        }
+    );
+
+    revealElements.forEach((el) => observer.observe(el));
+});

@@ -24,7 +24,6 @@
                 <li><a href="#bts-projects">Projets BTS</a></li>
                 <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#stage">Stage</a></li>
-                <li><a href="#gpi">Patrimoine</a></li>
                 <li><a href="#veille">Veille</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -34,7 +33,7 @@
     <main>
             <!-- Section Accueil -->
             <div class="tab-content">
-                <div class="tab-pane active" id="home">
+                <div class="tab-pane active scroll-reveal scroll-reveal--hero" id="home">
                     <h1>BARRATTIER Régis</h1>
                     <p class="home-lead">Étudiant en deuxième année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métier) à l’EPSI de Montpellier. Objectif : devenir développeur d’applications en progressant sur la conception, la qualité du code et la mise en production responsable.</p>
                     <ul class="home-meta">
@@ -50,7 +49,7 @@
                 </div>
 
             <!-- Section À propos -->
-            <div class="tab-pane" id="about">
+            <div class="tab-pane scroll-reveal" id="about">
                 <h2>À propos</h2>
                 <p>Je suis un étudiant passionné par le développement logiciel et les nouvelles technologies. Mon objectif est de devenir un développeur compétent et polyvalent.</p>
                 <div class="bts-objectifs">
@@ -185,7 +184,7 @@
             </div>
 
             <!-- Section Projets -->
-            <div class="tab-pane" id="projects">
+            <div class="tab-pane scroll-reveal" id="projects">
                 <h2>Projets (PPE et réalisations)</h2>
                 <p>Les <strong>projets personnalisés encadrés (PPE)</strong> et travaux d’équipe permettent de mobiliser des technologies concrètes. Ci-dessous : technologies utilisées, courte description et lien vers le code lorsque le dépôt est public.</p>
                 <div class="projects">
@@ -267,25 +266,8 @@
                 </div>
             </div>
 
-            <!-- Section Gestion du patrimoine informatique -->
-            <div class="tab-pane" id="gpi">
-                <h2>Gestion du patrimoine informatique</h2>
-                <p>La <strong>gestion du patrimoine informatique (GPI)</strong> recouvre l’ensemble des actifs numériques d’une organisation : matériels, logiciels, réseau, données, comptes et contrats. L’objectif est de les identifier, les documenter, assurer leur disponibilité et réduire les risques (sécurité, obsolescence, non-conformité).</p>
-                <h3>Notions travaillées en formation</h3>
-                <ul class="gpi-list">
-                    <li><strong>Inventaire et cartographie</strong> : savoir ce qui existe, où c’est hébergé, qui en est responsable.</li>
-                    <li><strong>Maintenance et évolution</strong> : mises à jour, cycle de vie des équipements et des logiciels.</li>
-                    <li><strong>Sauvegarde et reprise</strong> : protection des données et conscience des enjeux de restauration.</li>
-                    <li><strong>Sécurité et accès</strong> : authentification, droits, bonnes pratiques pour limiter les incidents.</li>
-                    <li><strong>Documentation et support</strong> : procédures, transfert d’information aux utilisateurs.</li>
-                </ul>
-                <h3>Mise en situation</h3>
-                <p>En <strong>première année</strong>, mon <a href="#parcours">stage</a> sur un site vitrine (WordPress / Elementor) m’a fait travailler organisation du contenu, choix d’extensions et hébergement — autant d’éléments qui relèvent du patrimoine applicatif « visible » côté métier.</p>
-                <p>En <strong>deuxième année</strong>, le projet FastAPI / MongoDB, la <strong>conteneurisation (Docker)</strong> et le chatbot ont mis l’accent sur les <strong>API</strong>, la persistance des données et l’intégration de services d’IA : autant de briques à documenter, sécuriser et maintenir dans un SI réel.</p>
-            </div>
-
             <!-- Section Veille -->
-            <div class="tab-pane" id="veille">
+            <div class="tab-pane scroll-reveal" id="veille">
                 <h2>Veille</h2>
                 
                 <div class="veille-explanation">
@@ -334,5 +316,6 @@
             </div>
         </div>
     </main>
+    <script src="script.js" defer></script>
 </body>
 </html>
