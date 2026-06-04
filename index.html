@@ -8,44 +8,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <span class="logo">Portfolio</span>
-            <ul class="nav-links">
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation principale">
+        <span class="logo">Portfolio</span>
+        <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#competences">Compétences</a></li>
-                <li><a href="#synthese-competences">Synthèse E4</a></li>
+                <li><a href="#synthese-competences">Tableau de synthèse</a></li>
                 <li><a href="#formation">Formation</a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="#bts-projects">Projets BTS</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#stage">Stage</a></li>
+                <li><a href="#epreuve-e5">Épreuve E5</a></li>
+                <li><a href="#epreuve-e6">Épreuve E6</a></li>
+                <li><a href="#stage">Stages</a></li>
                 <li><a href="#veille">Veille</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
     </nav>
 
     <main>
             <!-- Section Accueil -->
             <div class="tab-content">
                 <div class="tab-pane active scroll-reveal scroll-reveal--hero" id="home">
+                    <div class="home-profile">
+                        <img src="images/photo-regis.png" alt="Régis Barrattier" class="home-photo" width="200" height="200">
+                        <div class="home-profile-text">
                     <h1>BARRATTIER Régis</h1>
                     <p class="home-lead">Étudiant en deuxième année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métier) à l’EPSI de Montpellier. Objectif : devenir développeur d’applications en progressant sur la conception, la qualité du code et la mise en production responsable.</p>
                     <ul class="home-meta">
-                        <li><span class="home-meta-label">Formation</span> BTS SIO 2<sup>e</sup> année · EPSI Montpellier</li>
+                        <li><span class="home-meta-label">Formation</span> BTS SIO · SN2 · EPSI Montpellier</li>
                         <li><span class="home-meta-label">Option</span> SLAM</li>
+                        <li><span class="home-meta-label">Alternance</span> Non — en recherche d’une entreprise</li>
                     </ul>
                     <p class="home-documents-intro">Documents et profils pour le jury / les recruteurs :</p>
                     <ul class="home-links">
-                        <li><a href="images/Modern%20Professional%20CV%20Resume%20(1).pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+                        <li><a href="images/Regis-BARRATTIER-CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
                         <li><a href="https://www.linkedin.com/in/r%C3%A9gis-barrattier-902810327/" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a></li>
                         <li><a href="https://github.com/finsamer" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                     </ul>
+                        </div>
+                    </div>
                 </div>
 
             <!-- Section À propos -->
@@ -109,57 +120,76 @@
                 <p>Voici les langages de programmation et technologies que je maîtrise :</p>
                 <div class="competences-grid">
                     <div class="competence-item">
-                        <div class="competence-icon">🐍</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-python-plain colored"></i></div>
                         <h3>Python</h3>
                         <p>Langage de programmation polyvalent pour le développement d'applications et l'analyse de données.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🐘</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-php-plain colored"></i></div>
                         <h3>PHP</h3>
                         <p>Langage de programmation web pour le développement côté serveur et la création d'applications dynamiques.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🔷</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-csharp-plain colored"></i></div>
                         <h3>C#</h3>
                         <p>Langage de programmation orienté objet développé par Microsoft pour les applications .NET.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🌐</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-html5-plain colored"></i></div>
                         <h3>HTML</h3>
                         <p>Langage de balisage pour structurer le contenu des pages web.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🎨</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-css3-plain colored"></i></div>
                         <h3>CSS</h3>
                         <p>Langage de style pour la mise en forme et le design des pages web.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">⚡</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-javascript-plain colored"></i></div>
                         <h3>JavaScript</h3>
                         <p>Langage de programmation pour créer des interactions dynamiques côté client.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🎭</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-symfony-original colored"></i></div>
                         <h3>Symfony</h3>
                         <p>Framework PHP pour le développement d'applications web robustes et maintenables.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🗄️</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
                         <h3>SQL Server</h3>
                         <p>Système de gestion de base de données relationnelle de Microsoft.</p>
                     </div>
                     <div class="competence-item">
-                        <div class="competence-icon">🐳</div>
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-docker-plain colored"></i></div>
                         <h3>Docker</h3>
-                        <p>Conteneurisation et exécution d’applications en environnement isolé (stage 2<sup>e</sup> année : stack FastAPI, MongoDB, services du projet).</p>
+                        <p>Conteneurisation et exécution d’applications en environnement isolé (stage 2<sup>e</sup> année, Locasport, etc.).</p>
+                    </div>
+                    <div class="competence-item">
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-cplusplus-plain colored"></i></div>
+                        <h3>C++</h3>
+                        <p>Langage compilé pour la programmation système, la performance et les fondamentaux de l’algorithmique.</p>
+                    </div>
+                    <div class="competence-item">
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-nextjs-original colored"></i></div>
+                        <h3>Next.js</h3>
+                        <p>Framework React pour applications web modernes (épreuve E6 Locasport, rendu et routage côté front).</p>
+                    </div>
+                    <div class="competence-item">
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-vuejs-plain colored"></i></div>
+                        <h3>Vue.js</h3>
+                        <p>Framework JavaScript progressif pour interfaces utilisateur réactives et composants réutilisables.</p>
+                    </div>
+                    <div class="competence-item">
+                        <div class="competence-icon" aria-hidden="true"><i class="devicon-mongodb-plain colored"></i></div>
+                        <h3>MongoDB</h3>
+                        <p>Base de données NoSQL orientée documents (stage Ed&amp;Disce, API REST et opérations CRUD).</p>
                     </div>
                 </div>
                 <div class="synthese-bloc" id="synthese-competences">
                     <h3>Tableau de synthèse des compétences professionnelles</h3>
                     <p class="synthese-intro">Le tableau officiel (compétences du référentiel BTS SIO, preuves, niveaux) est disponible au format Excel. Seules les compétences effectivement maîtrisées et illustrables à l’oral y figurent, conformément aux consignes du jury.</p>
-                    <p class="synthese-file-note"><strong>Fichier :</strong> <code>documents/epreuvetableauregis.xlsx</code> — une version mise à jour pourra remplacer ce classeur en conservant le nom ou en ajustant le lien ci-dessous.</p>
                     <p>
-                        <a href="documents/epreuvetableauregis.xlsx" class="veille-link" download="epreuvetableauregis.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Télécharger le tableau de synthèse (.xlsx)</a>
+                        <a href="documents/Barrattier_Regis_Tableau_Competences.xlsx" class="veille-link" download="Barrattier_Regis_Tableau_Competences.xlsx" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Télécharger le tableau de synthèse (.xlsx)</a>
                     </p>
                 </div>
             </div>
@@ -170,7 +200,7 @@
                 <div class="formation-blocks">
                     <div class="formation-block">
                         <h3>2025/2026 - Présent</h3>
-                        <p>BTS SIO - Deuxième année (EPSI Montpellier)</p>
+                        <p>BTS SIO — SN2 (EPSI Montpellier)</p>
                     </div>
                     <div class="formation-block">
                         <h3>2024/2025</h3>
@@ -186,82 +216,119 @@
             <!-- Section Projets -->
             <div class="tab-pane scroll-reveal" id="projects">
                 <h2>Projets (PPE et réalisations)</h2>
-                <p>Les <strong>projets personnalisés encadrés (PPE)</strong> et travaux d’équipe permettent de mobiliser des technologies concrètes. Ci-dessous : technologies utilisées, courte description et lien vers le code lorsque le dépôt est public.</p>
+                <p>Les <strong>PPE</strong> et projets d’équipe à l’EPSI. Cliquez sur une carte pour ouvrir la page détaillée.</p>
                 <div class="projects">
-                    <div class="project">
-                        <div class="project-thumb" role="img" aria-label="Aperçu projet Workshop">Workshop</div>
+                    <a href="projet-neptune.html" class="project project-card-link">
+                        <div class="project-thumb" role="img" aria-label="Aperçu Hôtel Neptune">Hôtel Neptune</div>
+                        <h3>Hôtel Neptune</h3>
+                        <p class="project-tech"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></p>
+                        <p>Réservation en ligne pour un hôtel fictif.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-workshop.html" class="project project-card-link">
+                        <div class="project-thumb" role="img" aria-label="Aperçu Workshop">Workshop</div>
                         <h3>Workshop</h3>
-                        <p class="project-tech"><span class="tech-tag">Travail d’équipe</span><span class="tech-tag">Méthodologie</span></p>
-                        <p>Projet collaboratif sur des problématiques réelles ; apprentissage de la coordination et de la livraison en groupe.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
-                    <div class="project">
+                        <p class="project-tech"><span class="tech-tag">Prototypage</span><span class="tech-tag">3D</span></p>
+                        <p>Boîte de Rube Goldberg — 1<sup>re</sup> semaine de cours.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-bataille-navale.html" class="project project-card-link">
                         <div class="project-thumb" role="img" aria-label="Aperçu Bataille navale">Bataille navale</div>
                         <h3>Bataille navale</h3>
                         <p class="project-tech"><span class="tech-tag">Python</span></p>
-                        <p>Jeu de bataille navale avec interface utilisateur simple ; logique de jeu et gestion des grilles.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
-                    <div class="project">
+                        <p>Jeu de bataille navale en Python.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-stylomagik.html" class="project project-card-link">
                         <div class="project-thumb" role="img" aria-label="Aperçu StyloMagik">StyloMagik</div>
                         <h3>StyloMagik</h3>
-                        <p class="project-tech"><span class="tech-tag">Conception</span><span class="tech-tag">Application</span></p>
-                        <p>Projet de conception autour d’une application de gestion de stylos connectés.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
-                    <div class="project">
+                        <p class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span></p>
+                        <p>Vente de stylos éco et fournitures de bureau.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-seo.html" class="project project-card-link">
                         <div class="project-thumb" role="img" aria-label="Aperçu SEO">SEO</div>
                         <h3>Projet transversal SEO</h3>
                         <p class="project-tech"><span class="tech-tag">Web</span><span class="tech-tag">SEO</span></p>
-                        <p>Optimisation du référencement naturel d’un site web selon les bonnes pratiques.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
-                    <div class="project">
+                        <p>Référencement naturel d’un site web.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-fastflash.html" class="project project-card-link">
                         <div class="project-thumb" role="img" aria-label="Aperçu FastFlash">FastFlash</div>
                         <h3>FastFlash</h3>
-                        <p class="project-tech"><span class="tech-tag">Mobile</span></p>
-                        <p>Étude et réalisation autour d’une application mobile de partage de contenus instantanés.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
-                    <div class="project">
+                        <p class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JS</span></p>
+                        <p>Site de vente de cocktails.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
+                    <a href="projet-nectar-shield.html" class="project project-card-link">
                         <div class="project-thumb" role="img" aria-label="Aperçu Nectar Shield">Nectar Shield</div>
                         <h3>Nectar Shield</h3>
-                        <p class="project-tech"><span class="tech-tag">Cybersécurité</span></p>
-                        <p>Projet orienté protection des données et sensibilisation aux enjeux de sécurité.</p>
-                        <a href="https://github.com/finsamer" class="project-repo" target="_blank" rel="noopener noreferrer">Dépôt GitHub à lier</a>
-                    </div>
+                        <p class="project-tech"><span class="tech-tag">IoT</span><span class="tech-tag">IA</span></p>
+                        <p>Surveillance des ruches et alerte frelons asiatiques.</p>
+                        <span class="project-repo">Voir le détail du projet →</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- Section Projets BTS -->
-            <div class="tab-pane" id="bts-projects">
-                <h2>Projets BTS (épreuves)</h2>
-                <p>Deux projets que je réaliserai cette année pour le BTS. Les emplacements ci-dessous seront remplis dès que les projets seront lancés.</p>
+            <!-- Section Épreuve E5 — Portfolio -->
+            <div class="tab-pane scroll-reveal" id="epreuve-e5">
+                <h2>Épreuve E5 — Portfolio</h2>
+                <p>Ce <strong>site portfolio</strong> constitue le support de l’<strong>épreuve E5</strong> : il présente mon parcours, mes compétences, mes projets (PPE), mes stages, ma veille technologique et le tableau de synthèse des compétences professionnelles, dans une forme structurée pour l’oral du BTS SIO.</p>
+                <ul class="bts-features">
+                    <li>Navigation par sections (accueil, compétences, projets, stages, veille, contact)</li>
+                    <li>Pages détaillées par projet et par stage (preuves et technologies mobilisées)</li>
+                    <li>Téléchargement du tableau de synthèse Excel et des rapports de veille (PDF)</li>
+                    <li>Site statique : <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong></li>
+                </ul>
+            </div>
+
+            <!-- Section Épreuve E6 — Locasport -->
+            <div class="tab-pane" id="epreuve-e6">
+                <h2>Épreuve E6 — Locasport</h2>
+                <p><strong>Locasport</strong> est une application fictive de <strong>location de matériel sportif</strong>. Un même écosystème regroupe une <strong>API REST</strong> centrale, une <strong>application web</strong> (situation 1) et une <strong>application mobile</strong> (situation 2) qui s’appuient toutes les deux sur cette API.</p>
+                <p class="bts-repo-intro">Dépôt GitHub (API + web pour l’instant) : <a href="https://github.com/finsamer/Locasport" target="_blank" rel="noopener noreferrer">github.com/finsamer/Locasport</a></p>
                 <div class="bts-projects-grid">
                     <div class="bts-project">
-                        <h3>Projet BTS 1</h3>
-                        <p>Placeholder du premier projet. Description, objectifs, compétences mobilisées et livrables seront ajoutés ici.</p>
-                        <a href="#" class="stage-link">Détails à venir</a>
+                        <h3>Situation 1 — Application web</h3>
+                        <p class="project-tech"><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">Tailwind</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">Prisma</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Docker</span></p>
+                        <p>Interface web pour les <strong>clients</strong> (catalogue, réservations) et le <strong>back-office</strong> agents/admin (inventaire, contrats, factures, maintenances). Le front Next.js (<code>locasport-web/</code>) consomme l’API Express documentée en Swagger.</p>
+                        <ul class="bts-features">
+                            <li>Authentification JWT (clients et agents)</li>
+                            <li>Catalogue avec filtre de disponibilité par dates</li>
+                            <li>Gestion des réservations, contrats et factures</li>
+                            <li>Tests automatisés (unitaires, intégration, fonctionnels, performance)</li>
+                        </ul>
+                        <a href="https://github.com/finsamer/Locasport/tree/main/locasport-web" class="stage-link" target="_blank" rel="noopener noreferrer">Voir le front web sur GitHub</a>
                     </div>
                     <div class="bts-project">
-                        <h3>Projet BTS 2</h3>
-                        <p>Placeholder du second projet. Description, objectifs, compétences mobilisées et livrables seront ajoutés ici.</p>
-                        <a href="#" class="stage-link">Détails à venir</a>
+                        <h3>Situation 2 — Application mobile</h3>
+                        <p class="project-tech"><span class="tech-tag">Flutter</span><span class="tech-tag">API REST</span><span class="tech-tag">JWT</span></p>
+                        <p>Application mobile prévue en <strong>Flutter</strong>, connectée à la <strong>même API</strong> que le web : consultation du catalogue, réservation de matériel et suivi côté client. Le dépôt mobile sera ajouté au projet une fois la première version livrée.</p>
+                        <ul class="bts-features">
+                            <li>Même back-end que la situation 1 (pas de duplication métier)</li>
+                            <li>Consommation des endpoints <code>/api/materiels</code>, <code>/api/reservations</code>, auth client</li>
+                            <li>Parcours mobile adapté au terrain (retrait / retour de matériel)</li>
+                        </ul>
+                        <a href="https://github.com/finsamer/Locasport" class="stage-link stage-link--muted" target="_blank" rel="noopener noreferrer">Dépôt mobile — à venir (API déjà disponible)</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Section Parcours -->
-            <div class="tab-pane" id="parcours">
-                <h2>Parcours</h2>
-                <div class="formation-blocks">
+            <!-- Section Stages -->
+            <div class="tab-pane" id="stage">
+                <h2>Stages en entreprise</h2>
+                <p class="stage-intro">Étudiant en <strong>SN2</strong>, sans alternance en cours : <strong>en recherche d’une entreprise</strong> pour une alternance ou un contrat en développement. Voici les deux stages réalisés dans le cadre du BTS.</p>
+                <div class="formation-blocks stage-blocks">
                     <div class="formation-block">
-                        <h3>2025/2026 — Stage de deuxième année</h3>
-                        <p>Développement d’une application web : back-end avec <strong>FastAPI</strong>, données avec <strong>MongoDB</strong> (API, manipulation dynamique des données). <strong>Docker</strong> pour la conteneurisation et des environnements reproductibles. Mise en place d’un <strong>chatbot</strong> s’appuyant sur des modèles d’IA (<strong>Mistral</strong>, <strong>ChatGPT</strong>).</p>
+                        <h3>2025/2026 — Ed&amp;Disce (2<sup>e</sup> année)</h3>
+                        <p><strong>Développeur web stagiaire</strong> : API REST <strong>FastAPI</strong>, <strong>MongoDB</strong>, authentification, CRUD, <strong>chatbot</strong> / IA, <strong>Docker</strong>, tests.</p>
+                        <a href="stage-ed-disce.html" class="veille-link">Voir le détail du stage</a>
+                        <a href="images/BTS_SIO_2026_Attestation_stage-Regis%20(1).pdf" class="veille-link" target="_blank" rel="noopener">Attestation de stage (PDF)</a>
                     </div>
                     <div class="formation-block">
                         <h3>2024/2025 — Stage de première année</h3>
-                        <p>Réalisation d’un site de vente d’œuvres d’art africaines avec <strong>WordPress</strong> et <strong>Elementor</strong> (mise en page, contenus, mise en ligne).</p>
+                        <p>Site de vente d’œuvres d’art africaines avec <strong>WordPress</strong> et <strong>Elementor</strong> : structure des pages, contenus et mise en ligne.</p>
+                        <a href="images/BARRATIER%20Regis_Attestation-stage%202025.pdf" class="veille-link" target="_blank" rel="noopener">Attestation de stage (PDF)</a>
                     </div>
                 </div>
             </div>
@@ -275,31 +342,24 @@
                     <p>La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques, les innovations dans un secteur d'activité donnée. La veille technologique comprend notamment la surveillance, la collecte, le partage et la diffusion d'information permettant d'anticiper ou de s'informer sur des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc…. Cela a pour but d'évaluer l'impact sur l'environnement et l'organisation.</p>
                     
                     <h3>Les principaux outils de ma veille</h3>
-                    <p>J’effectue ma veille avec <strong>Feedly</strong> (agrégation de flux RSS), des newsletters spécialisées (par exemple autour de l’IA et de la data), et parfois des alertes du type <strong>Google Alerts</strong> sur des mots-clés ciblés. En complément, je consulte des sites d’actualité tech (<abbr title="High Tech">HT</abbr> / matériel) pour suivre l’évolution des produits et des menaces. Les informations sont synthétisées dans mon <a href="images/2024-25_SN1-BARRATTIER-Regis_DocumentVeilleTechno.pdf" target="_blank" rel="noopener">rapport de veille (PDF)</a>.</p>
+                    <p>J’effectue ma veille avec <strong>Feedly</strong> (agrégation de flux RSS), des newsletters spécialisées, des alertes <strong>Google Alerts</strong> et des sources institutionnelles (par exemple la <strong>CNIL</strong>). Les synthèses sont rédigées dans des rapports PDF accessibles ci-dessous.</p>
                     <h3>Impact sur mon métier visé (développement / SI)</h3>
-                    <p>Les évolutions liées à l’<strong>IA dans la cybersécurité</strong> changent la donne pour les développeurs : automatisation de la détection, nouveaux outils, mais aussi risques (faux positifs, dépendance aux fournisseurs, fuites de données d’entraînement). Suivre ces sujets me permet d’anticiper les exigences de sécurité dans les projets applicatifs et d’échanger de façon informée avec les équipes infrastructure lors de l’E4.</p>
+                    <p>La veille sur l’<strong>IA et la cybersécurité</strong> m’aide à intégrer la sécurité dès la conception d’applications (API, authentification, données sensibles). La veille sur le <strong>RGPD et le cloud</strong> complète cette démarche : hébergement, traitement des données personnelles et obligations légales — des sujets concrets pour un futur développeur qui déploie des services en ligne (stages, Locasport, etc.).</p>
                 </div>
 
                 <div class="veilles-list">
                     <h3>Mes veilles technologiques</h3>
                     <div class="veille-item">
-                        <h4>L'IA dans la cybersécurité</h4>
-                        <p>Analyse des dernières innovations en intelligence artificielle appliquée à la sécurité informatique et protection des données.</p>
-                        <a href="images/2024-25_SN1-BARRATTIER-Regis_DocumentVeilleTechno.pdf" class="veille-link" data-veille="ia-cybersecurite" target="_blank">📄 Consulter le rapport de veille</a>
+                        <h4>Veille n°1 — L’IA dans la cybersécurité</h4>
+                        <p>Analyse des innovations en intelligence artificielle appliquée à la sécurité informatique et à la protection des données.</p>
+                        <a href="images/2024-25_SN1-BARRATTIER-Regis_DocumentVeilleTechno.pdf" class="veille-link" target="_blank" rel="noopener">Consulter le rapport (PDF)</a>
+                    </div>
+                    <div class="veille-item">
+                        <h4>Veille n°2 — CNIL, RGPD et cloud computing</h4>
+                        <p>Étude des obligations des entreprises en matière de protection des données (RGPD) et des enjeux liés au <strong>cloud computing</strong>, avec le point de vue de la CNIL.</p>
+                        <a href="images/2024-25_SN1-BARRATTIER-Regis_VeilleTechno2.pdf" class="veille-link" target="_blank" rel="noopener">Consulter le rapport (PDF)</a>
                     </div>
                 </div>
-            </div>
-
-            <!-- Section Stage -->
-            <div class="tab-pane" id="stage">
-                <h2>Stages en entreprise</h2>
-                <p>Le détail chronologique est dans la section <a href="#parcours">Parcours</a>. Synthèse des deux expériences :</p>
-                <h3>Deuxième année (2025/2026)</h3>
-                <p>Lors de mon stage de deuxième année, j’ai participé au développement d’une <strong>application web</strong> : <strong>FastAPI</strong> pour le back-end et <strong>MongoDB</strong> pour la base de données. L’objectif était de concevoir une <strong>API</strong> claire et efficace, et de manipuler les données de façon dynamique côté application. <strong>Docker</strong> a servi à conteneuriser l’application (et les services associés), ce qui rend les environnements plus reproductibles et simplifie le déploiement.</p>
-                <p>J’ai aussi contribué à la mise en place d’un <strong>chatbot</strong> en intégrant des modèles d’<strong>intelligence artificielle</strong> (<strong>Mistral</strong> et <strong>ChatGPT</strong>), ce qui m’a fait travailler la chaîne depuis l’API jusqu’aux réponses générées.</p>
-                <p><strong>Document lié :</strong> <a href="images/2025-26_Evaluation-Stage-SN2-Regis.pdf" class="veille-link" target="_blank" rel="noopener">Évaluation de stage (PDF)</a></p>
-                <h3>Première année (2024/2025)</h3>
-                <p>Stage centré sur un site de vente d’œuvres d’art africaines avec <strong>Elementor</strong> : besoins du porteur de projet, structure des pages, contenus et mise en ligne — lien fort avec le métier et les outils no-code / low-code.</p>
             </div>
 
             <!-- Section Contact -->
@@ -309,7 +369,7 @@
                 <div class="contact-info">
                     <p><strong>Email :</strong> <a href="mailto:regis.barrattier@ecoles-epsi.net">regis.barrattier@ecoles-epsi.net</a></p>
                     <p><strong>Téléphone :</strong> <a href="tel:+33641313372">06 41 31 33 72</a></p>
-                    <p><strong>CV :</strong> <a href="images/Modern%20Professional%20CV%20Resume%20(1).pdf" target="_blank" rel="noopener">Télécharger le CV (PDF)</a></p>
+                    <p><strong>CV :</strong> <a href="images/Regis-BARRATTIER-CV.pdf" target="_blank" rel="noopener">Télécharger le CV (PDF)</a></p>
                     <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/r%C3%A9gis-barrattier-902810327/" target="_blank" rel="noopener noreferrer">linkedin.com/in/régis-barrattier-902810327</a></p>
                     <p><strong>GitHub :</strong> <a href="https://github.com/finsamer" target="_blank" rel="noopener noreferrer">github.com/finsamer</a></p>
                 </div>

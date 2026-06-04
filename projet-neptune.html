@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel Neptune — Projet | Régis Barrattier</title>
+    <meta name="description" content="Site de réservation Hôtel Neptune — PHP, MySQL, architecture MVC/DAO.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation">
+        <a href="index.html" class="logo logo-link">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="nav-back">← Retour aux projets</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="tab-content project-detail">
+            <header class="project-detail-header">
+                <p class="project-detail-breadcrumb"><a href="index.html#projects">Projets</a> / Hôtel Neptune</p>
+                <h1>Hôtel Neptune</h1>
+                <p class="project-detail-lead">Application web de <strong>réservation en ligne</strong> pour un hôtel fictif : consultation des chambres, réservation, espace client et interface d’administration.</p>
+            </header>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Présentation</h2>
+                <p>Projet scolaire développé en <strong>PHP</strong> avec une base <strong>MySQL</strong>. Le site permet aux visiteurs de parcourir les chambres, de réserver un séjour et de gérer leur compte ; les administrateurs disposent d’un back-office pour l’inventaire, les réservations et la gestion des données.</p>
+                <p>L’architecture sépare clairement la partie publique (<code>public/</code>), la logique métier (<code>includes/</code>) et l’administration (<code>admin/</code>), avec un accès aux données centralisé via des <strong>DAO</strong> dans <code>includes/db/</code>.</p>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Technologies utilisées</h2>
+                <div class="project-detail-tech-grid">
+                    <div class="project-detail-tech">
+                        <i class="devicon-php-plain colored" aria-hidden="true"></i>
+                        <span>PHP 8+</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+                        <span>MySQL / MariaDB</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                        <span>HTML / CSS</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">Composer</span>
+                        <span>Gestion des dépendances PHP</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">PDO</span>
+                        <span>Accès sécurisé à la base (pdo_mysql)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Fonctionnalités principales</h2>
+                <ul class="project-detail-list">
+                    <li>Pages publiques : accueil, présentation des chambres et équipements</li>
+                    <li>Parcours de réservation et gestion du compte client</li>
+                    <li>Interface d’administration (chambres, réservations, données)</li>
+                    <li>Scripts SQL d’initialisation et de migration de la base</li>
+                    <li>Lancement en local via serveur PHP intégré (<code>php -S localhost:8000</code>)</li>
+                </ul>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Structure du dépôt</h2>
+                <ul class="project-detail-list">
+                    <li><code>public/</code> — pages et assets accessibles au navigateur</li>
+                    <li><code>includes/</code> — pages applicatives (chambres, réservation, compte)</li>
+                    <li><code>admin/</code> — back-office administrateur</li>
+                    <li><code>includes/db/</code> — couche d’accès aux données (DAO)</li>
+                </ul>
+            </section>
+
+            <section class="tab-pane project-detail-section project-detail-actions">
+                <a href="https://github.com/finsamer/5---Projet-Neptune---Secure" class="veille-link" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub</a>
+                <a href="index.html#projects" class="project-detail-back-link">Retour au portfolio</a>
+            </section>
+        </article>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

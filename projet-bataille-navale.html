@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bataille navale — Projet | Régis Barrattier</title>
+    <meta name="description" content="Jeu de bataille navale en Python — projet scolaire simple.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation">
+        <a href="index.html" class="logo logo-link">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="nav-back">← Retour aux projets</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="tab-content project-detail">
+            <header class="project-detail-header">
+                <p class="project-detail-breadcrumb"><a href="index.html#projects">Projets</a> / Bataille navale</p>
+                <h1>Bataille navale</h1>
+                <p class="project-detail-lead">Petit projet <strong>Python</strong> : implémentation du jeu classique de bataille navale.</p>
+            </header>
+            <section class="tab-pane project-detail-section">
+                <h2>Présentation</h2>
+                <p>Exercice de programmation visant à manipuler des structures simples (grilles, listes) et la logique d’un jeu à deux joueurs ou contre la machine.</p>
+            </section>
+            <section class="tab-pane project-detail-section">
+                <h2>Fonctionnalités</h2>
+                <ul class="project-detail-list">
+                    <li>Placement des navires sur la grille</li>
+                    <li>Tours de jeu et saisie des coordonnées</li>
+                    <li>Détection des touches, coulées et victoire</li>
+                </ul>
+            </section>
+            <section class="tab-pane project-detail-section">
+                <h2>Technologies</h2>
+                <div class="project-detail-tech-grid">
+                    <div class="project-detail-tech">
+                        <i class="devicon-python-plain colored" aria-hidden="true"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </section>
+            <section class="tab-pane project-detail-section project-detail-actions">
+                <a href="index.html#projects" class="project-detail-back-link">Retour au portfolio</a>
+            </section>
+        </article>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

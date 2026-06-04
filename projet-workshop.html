@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop — Rube Goldberg | Régis Barrattier</title>
+    <meta name="description" content="Projet Workshop EPSI — boîte de Rube Goldberg, prototypage et travail d'équipe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation">
+        <a href="index.html" class="logo logo-link">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="nav-back">← Retour aux projets</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="tab-content project-detail">
+            <header class="project-detail-header">
+                <p class="project-detail-breadcrumb"><a href="index.html#projects">Projets</a> / Workshop</p>
+                <h1>Workshop — boîte de Rube Goldberg</h1>
+                <p class="project-detail-lead">Projet de <strong>début d’année</strong> à l’EPSI, réalisé en équipe durant la <strong>première semaine de cours</strong>.</p>
+            </header>
+            <section class="tab-pane project-detail-section">
+                <h2>Présentation</h2>
+                <p>Création d’une <strong>boîte de Rube Goldberg</strong> : un parcours de mécanismes enchaînés où une bille descend et déclenche chaque étape jusqu’à la sortie finale.</p>
+                <p>L’équipe a conçu le parcours de A à Z : découpe et assemblage de <strong>carton</strong>, éléments <strong>imprimés en 3D</strong>, rampes, leviers et autres pièces pour faire circuler la bille dans la boîte.</p>
+            </section>
+            <section class="tab-pane project-detail-section">
+                <h2>Compétences mobilisées</h2>
+                <ul class="project-detail-list">
+                    <li>Travail d’équipe et répartition des tâches</li>
+                    <li>Prototypage rapide (carton, collage, tests)</li>
+                    <li>Impression 3D de pièces sur mesure</li>
+                    <li>Conception d’un enchaînement de mécanismes</li>
+                </ul>
+            </section>
+            <section class="tab-pane project-detail-section project-detail-actions">
+                <a href="index.html#projects" class="project-detail-back-link">Retour au portfolio</a>
+            </section>
+        </article>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

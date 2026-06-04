@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Ed&amp;Disce — 2025/2026 | Régis Barrattier</title>
+    <meta name="description" content="Stage développeur web chez Ed&amp;Disce — FastAPI, MongoDB, authentification, API REST, chatbot et IA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation">
+        <a href="index.html" class="logo logo-link">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html#stage" class="nav-back">← Retour aux stages</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="tab-content project-detail">
+            <header class="project-detail-header">
+                <p class="project-detail-breadcrumb"><a href="index.html#stage">Stages</a> / Ed&amp;Disce · 2025/2026</p>
+                <h1>Développeur Web Stagiaire — Ed&amp;Disce</h1>
+                <p class="project-detail-lead">Participation au développement d’une <strong>application web</strong> orientée formation : travail principal sur le <strong>back-end</strong>, l’<strong>API REST</strong>, la <strong>sécurisation des accès</strong> et l’<strong>intégration de fonctionnalités intelligentes</strong> (chatbot, traitement de contenu).</p>
+            </header>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Contexte</h2>
+                <p>Lors de mon stage de <strong>deuxième année</strong> (SN2) chez <strong>Ed&amp;Disce</strong>, j’ai contribué à une stack moderne : API <strong>FastAPI</strong>, base <strong>MongoDB</strong>, conteneurisation <strong>Docker</strong> et tests automatisés. Cette expérience m’a permis de renforcer mes compétences en développement web full-stack, en bases NoSQL, en conception d’API et en intégration de services d’intelligence artificielle.</p>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Missions réalisées</h2>
+                <ul class="project-detail-list">
+                    <li><strong>Authentification et gestion des utilisateurs</strong> — mise en place des mécanismes d’inscription, de connexion et de gestion des sessions (tokens JWT, validation des requêtes via une dépendance de sécurité FastAPI).</li>
+                    <li><strong>API REST avec MongoDB</strong> — conception et implémentation des opérations CRUD sur les ressources métier (cours, sections), avec modèles Pydantic et persistance dans MongoDB.</li>
+                    <li><strong>Intégration d’un chatbot / IA</strong> — connexion de fonctionnalités intelligentes à l’application pour améliorer l’interaction utilisateur (assistant conversationnel, modèles <strong>Mistral</strong> / <strong>ChatGPT</strong> selon les besoins du projet).</li>
+                    <li><strong>Tests et validation</strong> — vérification du bon fonctionnement des endpoints, tests de sécurité et correction des anomalies (suite <code>pytest</code>).</li>
+                    <li><strong>Conteneurisation</strong> — déploiement local reproductible de l’API et de MongoDB via <code>docker compose</code>.</li>
+                </ul>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Technologies mobilisées</h2>
+                <div class="project-detail-tech-grid">
+                    <div class="project-detail-tech">
+                        <i class="devicon-python-plain colored" aria-hidden="true"></i>
+                        <span>Python 3.12+</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">FastAPI</span>
+                        <span>API REST, Swagger / ReDoc</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <i class="devicon-mongodb-plain colored" aria-hidden="true"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <i class="devicon-docker-plain colored" aria-hidden="true"></i>
+                        <span>Docker · Compose</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">JWT</span>
+                        <span>Authentification (python-jose)</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">Pydantic</span>
+                        <span>Schémas et validation</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">pytest</span>
+                        <span>Tests unitaires et sécurité</span>
+                    </div>
+                    <div class="project-detail-tech">
+                        <span class="project-detail-tech-label">IA</span>
+                        <span>Transformers · extraction de mots-clés</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Points techniques (extrait du codebase)</h2>
+                <ul class="project-detail-list">
+                    <li><code>routers/courses.py</code> et <code>routers/sections.py</code> — endpoints CRUD protégés, filtrage par propriétaire (<code>owner</code>).</li>
+                    <li><code>core/security/</code> — gestion des clés API, tokens JWT, dépendance <code>SecurityDependency</code> sur chaque requête sensible.</li>
+                    <li><code>ai/keywords.py</code> — module IA (modèle Flan-T5) pour extraire des mots-clés à partir du contenu des sections.</li>
+                    <li><code>docker-compose.yml</code> — services API + MongoDB, healthchecks, variables d’environnement.</li>
+                    <li>Documentation interactive auto-générée : <code>/docs</code> (Swagger UI).</li>
+                </ul>
+            </section>
+
+            <section class="tab-pane project-detail-section">
+                <h2>Compétences acquises</h2>
+                <p>API REST · MongoDB · Authentification · CRUD · Développement back-end · Intégration chatbot / IA · Gestion de base NoSQL · Tests et débogage · Docker.</p>
+            </section>
+
+            <section class="tab-pane project-detail-section project-detail-actions">
+                <a href="images/BTS_SIO_2026_Attestation_stage-Regis%20(1).pdf" class="veille-link" target="_blank" rel="noopener">Attestation de stage (PDF)</a>
+                <a href="index.html#stage" class="project-detail-back-link">Retour au portfolio</a>
+            </section>
+        </article>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nectar Shield — Projet | Régis Barrattier</title>
+    <meta name="description" content="Nectar Shield — surveillance des ruches, capteurs IoT et IA pour apiculteurs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button type="button" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="sidebar-backdrop" hidden></div>
+    <nav class="sidebar" id="sidebar-nav" aria-label="Navigation">
+        <a href="index.html" class="logo logo-link">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="nav-back">← Retour aux projets</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="tab-content project-detail">
+            <header class="project-detail-header">
+                <p class="project-detail-breadcrumb"><a href="index.html#projects">Projets</a> / Nectar Shield</p>
+                <h1>Nectar Shield</h1>
+                <p class="project-detail-lead">Projet d’école en équipe (avec des étudiants d’une ou deux classes au-dessus) : solution de <strong>surveillance des ruches</strong> pour les apiculteurs.</p>
+            </header>
+            <section class="tab-pane project-detail-section">
+                <h2>Présentation</h2>
+                <p>Notre solution surveille les ruches des apiculteurs grâce à un dispositif mesurant la <strong>position</strong> et les <strong>mouvements</strong> de la ruche, la <strong>température extérieure</strong>, ainsi que l’<strong>humidité</strong>.</p>
+                <p>Équipé d’une <strong>caméra avec intelligence artificielle</strong>, le système détecte les <strong>frelons asiatiques</strong>, nuisibles aux abeilles et capables de décimer une colonie entière, et alerte l’apiculteur.</p>
+            </section>
+            <section class="tab-pane project-detail-section">
+                <h2>Bénéfices pour l’apiculteur</h2>
+                <ul class="project-detail-list">
+                    <li>Surveillance complète de l’état de santé de la ruche</li>
+                    <li>Alerte immédiate en cas de présence de frelons asiatiques</li>
+                    <li>Suivi des conditions environnementales (température, humidité) pour intervenir si la colonie est en danger</li>
+                    <li>Meilleure gestion et protection des colonies d’abeilles</li>
+                </ul>
+            </section>
+            <section class="tab-pane project-detail-section">
+                <h2>Technologies / domaines</h2>
+                <ul class="project-detail-list">
+                    <li>Capteurs IoT (position, mouvement, température, humidité)</li>
+                    <li>Vision par ordinateur / IA (détection des frelons)</li>
+                    <li>Système d’alerte pour l’apiculteur</li>
+                </ul>
+            </section>
+            <section class="tab-pane project-detail-section project-detail-actions">
+                <a href="index.html#projects" class="project-detail-back-link">Retour au portfolio</a>
+            </section>
+        </article>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
